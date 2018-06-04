@@ -12,12 +12,15 @@
 </head>
 <body>
   <script>
-    document.write(
-      '<style> .CLOSE-SITE {width:100vw; height:100vh; position:fixed; z-index: 99999; background: #ff4 url(""); color: #232323; font-weight: 700; font-size: 8vw; text-align: center; padding-top: 10%; font-family: "Arial", sans-serif;} </style>'
-    )
-    document.write(
-      '<div class="CLOSE-SITE"> Sorry closed for repair </div>'
-    )
+    var passowrd = prompt("password please", '');
+    if (passowrd !== '89') {
+      document.write(
+        '<style> .CLOSE-SITE {width:100vw; height:100vh; position:fixed; z-index: 99999; background: #ff4 url(""); color: #232323; font-weight: 700; font-size: 8vw; text-align: center; padding-top: 10%; font-family: "Arial", sans-serif;} </style>'
+      )
+      document.write(
+        '<div class="CLOSE-SITE"> Sorry closed </div>'
+      )
+    }
   </script>
   <div class="main-wrap">
 
