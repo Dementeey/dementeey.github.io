@@ -15,27 +15,16 @@
   <meta property="og:image" content="https://dementeey.github.io/img/avatar2.jpg" />
 </head>
 <body>
-  <!-- <script>
-    var passowrd = prompt("password please", '');
-    if (passowrd !== '89') {
-      document.write(
-        '<style> .CLOSE-SITE {width:100vw; height:100vh; position:fixed; z-index: 99999; background: #ff4 url(""); color: #232323; font-weight: 700; font-size: 8vw; text-align: center; padding-top: 10%; font-family: "Arial", sans-serif;} </style>'
-      )
-      document.write(
-        '<div class="CLOSE-SITE"> Sorry closed </div>'
-      )
-    }
-  </script> -->
 
+  <div class="burger__wrap">
+    <div class="burger"></div>
+  </div>
   <div class="main-wrap">
     <div class="burger-overlay  overlay  is-close"></div>
-    <aside class="side-bar">
-      <div class="burger__wrap">
-      <div class="burger"></div>
-    </div>
+    <aside class="side-bar" touch-action="none">
+
       <div class="avatar">
-        <!-- <img class="logo__img" src="img/logo.jpg" alt="my logo"> -->
-        <img class="avatar__img" src="img/avatar2.jpg" alt="my logo">
+        <img class="avatar__img" src="img/avatar.jpg" alt="my logo">
       </div>
       <nav class="aside__nav">
         <ul class="aside__nav-list">
@@ -59,6 +48,9 @@
         </a>
         <a class="social__link icon-git"  title="my github" target="_blank" href="https://github.com/Dementeey/">
           <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 438.536 438.536"><g fill="#3289c7"><path d="M158.173 352.599c-3.049.568-4.381 1.999-3.999 4.281.38 2.283 2.093 3.046 5.138 2.283 3.049-.76 4.38-2.095 3.997-3.997-.378-2.092-2.091-2.95-5.136-2.567zM141.898 354.885c-3.046 0-4.568 1.041-4.568 3.139 0 2.474 1.619 3.518 4.853 3.138 3.046 0 4.57-1.047 4.57-3.138 0-2.471-1.619-3.522-4.855-3.139zM119.629 354.022c-.76 2.095.478 3.519 3.711 4.284 2.855 1.137 4.664.568 5.424-1.714.572-2.091-.666-3.61-3.711-4.568-2.856-.759-4.663-.102-5.424 1.998z"/><path d="M414.41 24.123C398.326 8.042 378.964 0 356.309 0H82.225C59.577 0 40.208 8.042 24.123 24.123 8.042 40.207 0 59.576 0 82.225v274.088c0 22.65 8.042 42.017 24.123 58.098 16.084 16.084 35.454 24.126 58.102 24.126h63.953c4.184 0 7.327-.144 9.42-.424 2.092-.288 4.184-1.526 6.279-3.717 2.096-2.187 3.14-5.376 3.14-9.562 0-.568-.05-7.046-.144-19.417-.097-12.375-.144-22.176-.144-29.41l-6.567 1.143c-4.187.76-9.469 1.095-15.846.999-6.374-.096-12.99-.76-19.841-1.998-6.855-1.239-13.229-4.093-19.13-8.562-5.898-4.477-10.085-10.328-12.56-17.559l-2.856-6.571c-1.903-4.373-4.899-9.229-8.992-14.554-4.093-5.332-8.232-8.949-12.419-10.852l-1.999-1.428c-1.331-.951-2.568-2.098-3.711-3.429-1.141-1.335-1.997-2.669-2.568-3.997-.571-1.335-.097-2.43 1.427-3.289 1.524-.855 4.281-1.279 8.28-1.279l5.708.855c3.808.76 8.516 3.042 14.134 6.851 5.614 3.806 10.229 8.754 13.846 14.843 4.38 7.806 9.657 13.75 15.846 17.843 6.184 4.097 12.419 6.143 18.699 6.143s11.704-.476 16.274-1.424c4.565-.954 8.848-2.385 12.847-4.288 1.713-12.751 6.377-22.559 13.988-29.41-10.848-1.143-20.602-2.854-29.265-5.14-8.658-2.286-17.605-5.995-26.835-11.136-9.234-5.14-16.894-11.512-22.985-19.13-6.09-7.618-11.088-17.61-14.987-29.978-3.901-12.375-5.852-26.652-5.852-42.829 0-23.029 7.521-42.637 22.557-58.814-7.044-17.32-6.379-36.732 1.997-58.242 5.52-1.714 13.706-.428 24.554 3.855 10.85 4.286 18.794 7.951 23.84 10.992 5.046 3.042 9.089 5.614 12.135 7.71 17.705-4.949 35.976-7.423 54.818-7.423 18.841 0 37.115 2.474 54.821 7.423l10.849-6.852c7.426-4.57 16.18-8.757 26.269-12.562 10.088-3.806 17.795-4.854 23.127-3.14 8.562 21.51 9.328 40.922 2.279 58.241 15.036 16.179 22.559 35.786 22.559 58.815 0 16.18-1.951 30.505-5.852 42.969-3.898 12.467-8.939 22.463-15.13 29.981-6.184 7.519-13.894 13.843-23.124 18.986-9.232 5.137-18.178 8.853-26.84 11.132-8.661 2.286-18.414 4.004-29.263 5.147 9.891 8.562 14.839 22.072 14.839 40.538v68.238c0 3.237.472 5.852 1.424 7.851.958 1.998 2.478 3.374 4.571 4.141 2.102.76 3.949 1.235 5.571 1.424 1.622.191 3.949.287 6.995.287h63.953c22.648 0 42.018-8.042 58.095-24.126 16.084-16.084 24.126-35.454 24.126-58.102V82.225c-.002-22.649-8.044-42.021-24.125-58.102z"/><path d="M86.793 319.195c-1.331.948-1.141 2.471.572 4.565 1.906 1.902 3.427 2.189 4.57.855 1.331-.948 1.141-2.471-.575-4.569-1.902-1.71-3.424-1.997-4.567-.851zM77.374 312.057c-.57 1.335.096 2.478 1.999 3.426 1.521.955 2.762.767 3.711-.568.57-1.335-.096-2.478-1.999-3.433-1.903-.572-3.14-.38-3.711.575zM95.646 330.331c-1.715.948-1.715 2.666 0 5.137 1.713 2.478 3.328 3.142 4.853 1.998 1.714-1.334 1.714-3.142 0-5.427-1.521-2.468-3.14-3.046-4.853-1.708zM105.641 343.174c-1.714 1.526-1.336 3.327 1.142 5.428 2.281 2.279 4.185 2.566 5.708.849 1.524-1.519 1.143-3.326-1.142-5.42-2.281-2.28-4.185-2.568-5.708-.857z"/></g></svg>
+        </a>
+        <a class="social__link icon-codepen" title="my codepen" target="_blank" href="https://codepen.io/dementeey/">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512"><g fill="#418ce8"><path d="M164 240.6v30.5l22.2-15.6zM300.4 241.8l35.8-24.1-69.6-48.4.2 48.1zM242 216.3v-47l-68.7 48.1 34.35 23z"/><path d="M374 0H138C61.8 0 0 61.8 0 138v236c0 76.2 61.8 138 138 138h236c76.2 0 138-61.8 138-138V138C512 61.8 450.2 0 374 0zm-3 291.5c0 6.2-3.3 12.1-8.5 15.5l-97.1 64.1c-6.2 4.1-14.35 4.1-20.55 0l-95.325-62.9c-5.2-3.4-8.525-9.3-8.525-15.5v-70.2c0-6.1 3.2-11.8 8.2-15.3l93.6-65.2c6.3-4.4 14.65-4.5 20.95-.3l98.725 65.3c5.2 3.4 8.525 9.3 8.525 15.5v69z"/><path d="M267 293.4v47.5l69.05-46.2-35.775-23.5zM243 293.5l-34.85-23.3-34.525 24.2L243 340.833zM346 271.9v-31.3l-23.6 15.8zM252.1 239.4l-22.5 15.7 25.5 17.1 23.2-15.6z"/></g></svg>
         </a>
         <a class="social__link icon-email"  title="my email" href="mailto:metallist9656@gmail.com">
           <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 528.633 528.632"><g fill="#418ce8"><path d="M264.317 326.235c-13.739 0-26.659-5.349-36.371-15.067L.692 83.914v356.863c0 16.897 13.703 30.601 30.6 30.601h466.044c16.896 0 30.6-13.703 30.6-30.601V83.92L300.693 311.167c-9.716 9.719-22.636 15.068-36.376 15.068z"/><path d="M.692 57.255H0l.698.697 240.229 240.234a32.994 32.994 0 0 0 23.391 9.688c8.464 0 16.933-3.231 23.39-9.688L527.936 57.953l.697-.697H.692v-.001z"/></g></svg>
@@ -120,38 +112,20 @@
       <section class="labs__tab is-close">
           <h2 class="labs__title">Labs</h2>
           <ul class="grid">
-            <li class="grid__item">
-              <article class="card">
-              <img class="card__img" src="labs/login-form/cover.png" alt="">
-              <div class="card__info">
-                <h3 class="card__title">Transparent Login | No JS</h3>
-                <p class="card__discription">
-                  One of my first login forms
-                </p>
-                <a href="labs/login-form/" class="carg__link">Read more</a>
-              </div>
-            </article>
-            </li>
-            <li class="grid__item">
-               <article class="card">
-              <img class="card__img" src="labs/login-form/cover.png" alt="">
-              <div class="card__info">
-                <h3 class="card__title">Project Grasp8</h3>
-                <p class="card__discription">Grasp8 is in pre production phase. More details coming soon </p>
-                <a href="labs-template.html" class="carg__link">Read more</a>
-              </div>
-            </article>
-            </li>
+
             <li class="grid__item">
               <article class="card">
                 <img class="card__img" src="labs/login-form/cover.png" alt="">
                 <div class="card__info">
-                  <h3 class="card__title">3 Lorem, ipsum dolor</h3>
-                  <p class="card__discription">Lorem, ipsum dolor</p>
-                  <a href="labs-template.html" class="carg__link">Read more</a>
+                  <h3 class="card__title">Transparent Login | No JS</h3>
+                  <p class="card__discription">
+                    One of my first login forms
+                  </p>
+                  <a href="labs/login-form/" class="carg__link">Read more</a>
                 </div>
               </article>
             </li>
+
           </ul>
       </section>
     </main>

@@ -1,8 +1,7 @@
 # My Portfolio
 
-## No need install
+https://dementeey.github.io/ 
 
-open link https://dementeey.github.io/
+---
 
-
-Thx =_=
+### Thanks for stopping by ;)
