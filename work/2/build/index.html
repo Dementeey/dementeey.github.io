@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=0.5, user-scalable=no">-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+
+<header class="page-header">
+  <div class="page-header__inner  container">
+
+    <nav class="page-nav">
+      <div class="nav__logo">
+        <a href="/" class="logo__link">Alexandra</a>
+        <span class="logo__description">Hotline- 8800 1781 145 245</span>
+      </div>
+      <ul class="nav__list">
+        <li class="nav__list-link"><a href="#Work">Work</a></li>
+        <li class="nav__list-link"><a href="#About">About</a></li>
+        <li class="nav__list-link"><a href="#Contact">Contact</a></li>
+      </ul>
+      <div class="burger__wrap" onclick="classElemClassToggle('.page-nav', 'burger--active')">
+        <div class="burger"></div>
+      </div>
+    </nav>
+
+    <div class="page-header__promo">
+      <p class="promo__text">
+        I&rsquo;m a&nbsp;designer, and for&nbsp;me, things are always evolving, and such evolution is&nbsp;necessary.
+      </p>
+    </div>
+
+  </div>
+</header>
+
+
+<section class="about" id="About">
+  <div class="about__inner  container">
+
+    <div class="first-box">
+      <h2 class="about__title">
+        I&nbsp;really like to&nbsp;look professional but also have personal flare.
+        You will never find me&nbsp;in&nbsp;head-to-toe designer.
+      </h2>
+      <div class="btn-wrap">
+        <button class="about__btn-contact  btn">contact me</button>
+        <button class="about__btn-more  btn">Know More</button>
+      </div>
+    </div>
+
+    <div class="second-box">
+      <p class="about__text">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+        Ut wisi enim ad min tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+      </p>
+      <p class="about__text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium cupiditate magni qui ratione reprehenderit voluptas?
+      </p>
+    </div>
+  </div>
+  <div class="about__inner  container">
+    <ul class="logos">
+      <li class="logos__item"></li>
+      <li class="logos__item"></li>
+      <li class="logos__item"></li>
+      <li class="logos__item"></li>
+      <li class="logos__item"></li>
+    </ul>
+  </div>
+</section>
+
+<section class="work" id="Work">
+  <div class="container">
+
+    <h2 class="work__title">See my works</h2>
+
+    <div class="work__slider">
+      <input type="radio" name="work__slider-input" id="work__slide-1" checked>
+      <input type="radio" name="work__slider-input" id="work__slide-2">
+      <input type="radio" name="work__slider-input" id="work__slide-3">
+
+      <div class="work__slide-btn__wrap">
+        <label class="work__slide-btn" id="work__slide-btn-1" for="work__slide-1"></label>
+        <label class="work__slide-btn" id="work__slide-btn-2" for="work__slide-2"></label>
+        <label class="work__slide-btn" id="work__slide-btn-3" for="work__slide-3"></label>
+      </div>
+
+      <div id="work__slider-1">
+        <h3 class="work__sub-title">I&nbsp;really like to&nbsp;look professional but also have personal flare.</h3>
+        <p class="work__text">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+          sed diam nonummy nibh euismod tincidunt ut&nbsp;laoreet dolore magna aliquam erat volutpat.
+          Ut&nbsp;wisi enim ad&nbsp;min tation ullamcorper suscipit lobortis nisl
+        </p>
+      </div>
+
+      <div id="work__slider-2">
+        <h3 class="work__sub-title">I&nbsp;really like to&nbsp;look professional.</h3>
+        <p class="work__text">
+          Lorem ipsum dolor sit ame t, consectetur adipisicing elit. Deleniti eos praesentium qui vitae?
+        </p>
+      </div>
+
+      <div id="work__slider-3">
+        <h3 class="work__sub-title">I&nbsp;reall have personal flare.</h3>
+        <p class="work__text">
+          Lorem ipsum dolor.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="testimonial">
+  <div class="container">
+    <div class="testimonial__slider">
+      <input type="radio" name="testimonial__slider-input" id="testimonial__slide-1" checked>
+      <input type="radio" name="testimonial__slider-input" id="testimonial__slide-2">
+      <input type="radio" name="testimonial__slider-input" id="testimonial__slide-3">
+
+      <div id="testimonial__slider-1">
+        <label class="testimonial__slide-pre" for="testimonial__slide-3"></label>
+        <label class="testimonial__slide-next" for="testimonial__slide-2"></label>
+
+        <p class="testimonial__text">
+          On&nbsp;a&nbsp;red carpet, you really want to&nbsp;feel your best,
+          so&nbsp;to&nbsp;work with a&nbsp;designer who will shape
+          a&nbsp;dress to&nbsp;your figure and take into consideration your opinions
+          is&nbsp;really a&nbsp;blessing.
+        </p>
+        <p class="testimonial__name">
+          Antonia jore
+          <span>SR. Market Analyst</span>
+        </p>
+      </div>
+
+      <div id="testimonial__slider-2">
+        <label class="testimonial__slide-pre" for="testimonial__slide-1"></label>
+        <label class="testimonial__slide-next" for="testimonial__slide-3"></label>
+
+        <p class="testimonial__text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi blanditiis culpa cumque distinctio doloribus dolorum est eum excepturi, exercitationem facere molestias necessitatibus odit perferendis quas quisquam ratione repellendus similique soluta!
+        </p>
+        <p class="testimonial__name">
+          Antonia jore 2
+          <span>SR. Market Analyst2</span>
+        </p>
+      </div>
+
+
+      <div id="testimonial__slider-3">
+        <label class="testimonial__slide-pre" for="testimonial__slide-2"></label>
+        <label class="testimonial__slide-next" for="testimonial__slide-1"></label>
+
+        <p class="testimonial__text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus ipsum quo sapiente sequi unde ut vero.
+        </p>
+        <p class="testimonial__name">
+          Antonia jore 3
+          <span>SR. Market Analyst3</span>
+        </p>
+      </div>
+      <div class="testimonial__video-wrap">
+        <video class="testimonial__video" loop="true" src="video/video-1.mp4"></video>
+        <div class="testimonial__video-play-btn" onclick="videoPlayBtn(this, 'video-1')"></div>
+        <div class="testimonial__video-pause-btn" onclick="videoPauseBtn(this, 'video-1')"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contacts" id="Contact">
+  <div class="container">
+    <h2 class="contacts__title">Contacts</h2>
+    <div class="contacts__wrap">
+      <p class="contacts__text">I really like to look professional but also have personal flare.</p>
+      <div class="btn  contacts__btn">Let’s talk</div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="page-footer">
+  <div class="container">
+    <nav class="page-nav">
+      <div class="nav__logo">
+        <a href="/" class="logo__link">Alexandra</a>
+        <span class="logo__description">Hotline- 8800 1781 145 245</span>
+      </div>
+      <ul class="nav__list">
+        <li class="nav__list-link"><a href="#Work">Work</a></li>
+        <li class="nav__list-link"><a href="#About">About</a></li>
+        <li class="nav__list-link"><a href="#Contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="page-footer__wrap">
+      <div class="copyright">Designed by @Junaed. All rights reserved.</div>
+      <ul class="social">
+        <li class="social__item"><a target="_blank" href="fb" class="social__link">fb</a></li>
+        <li class="social__item"><a target="_blank" href="p" class="social__link">p</a></li>
+        <li class="social__item"><a target="_blank" href="tw" class="social__link">tw</a></li>
+        <li class="social__item"><a target="_blank" href="in" class="social__link">in</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+<script src="js/index.js"></script>
+</body>
+</html>
