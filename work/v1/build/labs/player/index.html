@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dementeey WebFolio</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,500" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/normalize.css">
+  <link rel="stylesheet" href="../../css/labs-template.css">
+  <link rel="stylesheet" href="main.css">
+  <meta property="og:title" content="Dementeey WebFolio - Player | API" />
+  <meta property="og:type" content="Portfolio" />
+  <meta property="og:url" content="https://dementeey.github.io/labs/player/index.html" />
+  <meta property="og:image" content="https://dementeey.github.io/labs/player/cover.png" />
+  <script async src="fullscreenApi.js"></script>
+</head>
+<body>
+  <div class="main-wrap">
+
+    <div class="burger-overlay  overlay  is-close"></div>
+
+    <aside class="side-bar ">
+
+      <div class="burger__wrap">
+        <div class="burger"></div>
+      </div>
+
+      <div class="cover">
+        <img class="cover__img" src="cover.png" alt="Cover Labs">
+      </div>
+
+      <div class="description-wrap">
+        <h1 class="main-title">Player | API</h1>
+        <p class="labs-description">
+          The my custom html5 video player
+        </p>
+        <ul class="list-technologies">
+            <li class="list-item">HTML5</li>
+            <li class="list-item">HTML5 Audio/Video API</li>
+            <li class="list-item">CSS3</li>
+            <li class="list-item">JavaScript</li>
+        </ul>
+      </div>
+
+      <div class="btn-wrap">
+        <a href="/" class="go-to-index  btn">⟵ home</a>
+      </div>
+    </aside>
+
+    <main class="content">
+      <div class="frame__wrap">
+          <iframe name="frame" class="frame" frameborder="0"></iframe>
+            <div class="player">
+              <video id="video" src="vid_1.mp4" tabindex="1"></video>
+
+              <div class="player__controls">
+                <div class="porgress">
+                  <div class="progress__filled"></div>
+                </div>
+                <div class="player__controls-wrap">
+                  <div class="player-left-controls">
+                      <button class="player__btn toggle"></button>
+                      <div class="player__volume-block">
+                        <button class="player__volume-toggle"></button>
+                        <input class="player__volume-slider" type="range" name="volume" min="0" max="1" step="0.05" value="1">
+                      </div>
+
+
+                    </div>
+                    <div class="player-right-controls">
+                      <div class="player__video-time">
+                        <span class="player__video-time-current">0:00</span>
+                        <span class="player__video-time-duration">0:00</span>
+                      </div>
+                      <div class="skip-btn-wrap">
+                        <button data-skip="-10" class="player__btn btn-skip"></button>
+                        <button data-skip="10" class="player__btn  btn-skip"></button>
+                      </div>
+                      <button class="player__btn btn-fullscreen-open"></button>
+                      <button class="player__btn btn-fullscreen-closed"></button>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="frame-size-container">
+          </div>
+
+        </main>
+      </div>
+      <script async src="../../js/labs-template.js"></script>
+      <script async src="player.js"></script>
+</body>
+</html>
